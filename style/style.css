@@ -58,15 +58,9 @@ body {
     border-top: 8px solid var(--cor-primaria);
 }
 
-
-.profile-picture-mobile{
+#index-profile-picture-mobile{
     width: 50%;
-    border-radius: 15px;
-    box-shadow: 3px -3px var(--cor-terciaria);
-    border-right: 8px solid var(--cor-primaria);
-    border-top: 8px solid var(--cor-primaria);
 }
-
 
 .apresentacao{
 
@@ -165,7 +159,6 @@ body {
     width: auto;
     
 }
-
 @media only screen and (max-width: 800px){
     #index-profile-picture{
         visibility: hidden;
@@ -190,7 +183,17 @@ body {
         font-size: 12px;
     }
     .apresentacao__links__link{
-        width: 180px;
+        width: 250px;
         font-size: 14px;
+    }
+    .apresentacao__conteudo__subtitulo{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    #index-profile-picture-mobile{
+        visibility: hidden;
+        position: absolute;
     }
 }
