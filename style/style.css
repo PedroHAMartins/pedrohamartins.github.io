@@ -58,7 +58,9 @@ body {
     border-top: 8px solid var(--cor-primaria);
 }
 
+
 .profile-picture-mobile{
+    width: 50%;
     border-radius: 15px;
     box-shadow: 3px -3px var(--cor-terciaria);
     border-right: 8px solid var(--cor-primaria);
@@ -160,6 +162,12 @@ body {
     font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 400;
-    width: 100%;
+    width: auto;
     
+}
+
+@media only screen and (max-width: 800px){
+        .apresentacao__conteudo__texto{
+            font-size: 12px;
+    }
 }
