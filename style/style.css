@@ -37,7 +37,7 @@ body {
 
 .cabecalho__menu__link{
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -51,19 +51,19 @@ body {
 }
 
 .profile-picture{
-    width: 40%;
+    width: 50%;
     border-radius: 15px;
     box-shadow: 3px -3px var(--cor-terciaria);
     border-right: 8px solid var(--cor-primaria);
     border-top: 8px solid var(--cor-primaria);
 }
 
-#index-profile-picture-mobile{
+/* #index-profile-picture-mobile{
     width: 50%;
-}
+} */
 
 .apresentacao{
-
+    gap: 82px;
     padding: 8.8% 15%;
     display: flex;
     /* flex-direction: column;        Define formato em que ficará o display, se é em linha, se é em coluna e etc.*/
@@ -72,19 +72,19 @@ body {
 }
 
 .apresentacao__conteudo{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .apresentacao__conteudo__titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-principal);
 }
 
 .apresentacao__conteudo__titulo2{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-principal);
     border-bottom: 4px solid var(--cor-terciaria);
     padding-bottom: 4px;
@@ -96,12 +96,12 @@ body {
 }
 
 .apresentacao__conteudo__subtitulo{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-principal);
 }
 
 .apresentacao__conteudo__texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
 
@@ -116,14 +116,14 @@ body {
 .apresentacao__links__subtitulo{
     font-family: var(--fonte-principal);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
-.apresentacao__links__link{
-    width: 378px;
+.apresentacao__links__navegacao{
+    width: 50%;
     text-align: center;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 21.5px 0;
     text-decoration: none;
     color: var(--cor-secundaria);
@@ -137,10 +137,9 @@ body {
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.5s ease-out;
-
 }
 
-.apresentacao__links__link:hover{
+.apresentacao__links__navegacao:hover{
     background-color: var(--cor-primaria);
     background-position: left bottom;
     gap: 0px;
@@ -154,41 +153,68 @@ body {
     background-color: var(--cor-terciaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     width: auto;
     
 }
-@media only screen and (max-width: 800px){
+
+@media (max-width: 1200px) {
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .cabecalho__menu__link{
+        border-bottom: 1px solid var(--cor-terciaria);
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 10%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+    .apresentacao__links__navegacao{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+/* @media only screen and (max-width: 800px){
     #index-profile-picture{
         visibility: hidden;
         position: absolute;
     }
     .apresentacao__conteudo__texto{
-        font-size: 12px;
+        font-size: 0.75rem;
     }
     .apresentacao__conteudo__titulo, .apresentacao__conteudo__titulo2{
-        font-size: 18px;
+        font-size: 1.125rem;
     }
     .rodape{
-        font-size: 12px;
+        font-size: 0.75rem;
     }
     .cabecalho__menu{
         gap: 30px;
     }
     .cabecalho__menu__link{
-        font-size: 16px;
+        font-size: 1rem;
     }
     .apresentacao__links__subtitulo{
-        font-size: 12px;
+        font-size: 0.75rem;
     }
     .apresentacao__links__link{
         width: 250px;
-        font-size: 14px;
+        font-size: 0.875rem;
     }
     .apresentacao__conteudo__subtitulo{
-        font-size: 12px;
+        font-size: 0.75rem;
     }
+    
 }
 
 @media only screen and (min-width: 800px){
@@ -196,4 +222,4 @@ body {
         visibility: hidden;
         position: absolute;
     }
-}
+} */
