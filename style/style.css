@@ -168,9 +168,6 @@ body {
         flex-wrap: wrap;
         gap: 20px;
     }
-    .cabecalho__menu__link{
-        border-bottom: 1px solid var(--cor-terciaria);
-    }
     .apresentacao{
         flex-direction: column-reverse;
         padding: 10%;
