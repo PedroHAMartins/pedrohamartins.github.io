@@ -11,13 +11,13 @@
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="curriculo.html">Currículo</a>
-            <a class="cabecalho__menu__link" href="projects.html">Projetos</a>
+            <a class="cabecalho__menu__link" href="#section-home">Home</a>
+            <a class="cabecalho__menu__link" href="#profile-picture-about">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="#section-curriculo">Currículo</a>
+            <a class="cabecalho__menu__link" href="#section-projects">Projetos</a>
         </nav>
     </header>
-    <main class="apresentacao">
+    <main class="apresentacao" id="section-home">
         <section class="apresentacao__conteudo">  <!-- Padronizando nome da classe, onde o nome do elemento pai vem antes, seguidos de 2 underlines "_", e posteriormente o nome do filho -->
             <h1 class="apresentacao__conteudo__titulo">Busca um desenvolvedor front-end para completar sua equipe? <strong class="titulo-destaque">Pode contar comigo!</strong></h1>
             <p class="apresentacao__conteudo__texto">Olá! Sou Pedro Martins, estudante de Sistemas de Informação buscando minha oportunidade como desenvolvedor front-end. <strong class="titulo-destaque">Vamos conversar?</strong></p>
@@ -35,10 +35,63 @@
                     LinkedIn</a>
             </div>    
         </section>
-        <img id="index-profile-picture" class="profile-picture" src="files/images/profile_picture.jpg" alt="Foto de perfil Pedro Martins ">
+        <img id="index-profile-picture" class="profile-picture" src="files/images/picture3.jpg" alt="Foto de perfil Pedro Martins ">
     </main>
+    <section class="apresentacao" id="section-about">
+        <img class="profile-picture"src="files/images/picture2.jpg" alt="Foto de perfil" srcset="" id="profile-picture-about">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo2"  id ="sobremim">Sobre mim</h1>
+            <p class="apresentacao__conteudo__texto">Natural de São José do Rio Preto, estou finalizando minha graduação como bacharel de Sistemas de Informação pela Universidade Estadual de Campinas, onde realizo meus estudos relacionados a tecnologia e áreas relacionadas.
+
+            </p>
+            <p class="apresentacao__conteudo__texto">Sempre curioso e aficionado por tecnologia, estou em contato com computadores e dispositivos eletrônicos desde meus 4 anos, procurei então um caminho educacional e profissional na área, alinhando assim meus interesses,com meu futuro profissional.</p>
+        </section>
+    </section>
+    <section class="apresentacao" id="section-curriculo">
+        <section class="apresentacao__conteudo">
+
+            <h1 class="apresentacao__conteudo__titulo2">Currículo</h1>
+                <p class="apresentacao__conteudo__texto">Graduando em Sistemas de Informação pela Universidade Estadual de Campinas, estou em busca de novos caminhos na área da tecnologia e focado em desenvolvimento front-end.</p>
+            <h2 class="apresentacao__conteudo__subtitulo">Experiências</h2>
+                <ul class="apresentacao__conteudo__texto">
+                    <li>Analista de Suporte / Odontocompany, 2022/fev até 2022/dez</li>
+                    <li>Diretor de Marketing / Associação Atlética Acadêmica de Tecnologia da Unicamp, 2019</li>
+                    <li>Atendente de caixa / Santa Rosa Parking</li>
+                </ul>
+            <h2 class="apresentacao__conteudo__subtitulo">Idiomas</h2>
+                <ul class="apresentacao__conteudo__texto">
+                    <li>Português - Nativo</li>
+                    <li>Inglês - Avançado</li>
+                    <li>Espanhol - Básico</li>
+                </ul>
+            <h2 class="apresentacao__conteudo__subtitulo">Formação Educacional</h2>
+            <ul class="apresentacao__conteudo__texto">
+                <li>Bacharelado em Sistemas de Informação / Universidade Estadual de Campinas, 2018 - atualmente</li>
+                <li>Ensino médio / Colégio Intelectus, 2014 - 2017 - </li>
+                <li>Ensino fundamental / Colégio Santo André - 2007 - 2013</li>
+            </ul>
+        </section>
+        <img class="profile-picture" src="files/images/picture1.jpg" alt="Foto de perfil">
+    </section>
+    <section class="projetos" id="section-projects">
+        <h1 class="apresentacao__conteudo__titulo2">Projetos</h1>
+        <section class="projetos__container">
+                    <div class="projetos__container__cards">                 
+                        <a href="https://pedrohamartins.github.io/AluraPlus/"><img src="files/images/alura_plus.png" alt="" class="projetos__container__cards__image">Alura+</a>
+                    </div>   
+                    <div class="projetos__container__cards">                    
+                        <a href="https://pedrohamartins.github.io"><img src="files/images/portfolio.png" alt="" class="projetos__container__cards__image">Portfolio</a>
+                    </div>
+                    <div class="projetos__container__cards">                 
+                        <a href="https://pedrohamartins.github.io/7DaysCodeHTMLCSS/"><img src="files/images/7_days_challenge.png" alt="" class="projetos__container__cards__image">(W.I.P) 7 days challenge: HTML & CSS</a>
+                    </div>
+                    <div class="projetos__container__cards">                 
+                        <a href="https://pedrohamartins.github.io/AluraSPA/"><img src="files/images/alura_spa.png" alt="" class="projetos__container__cards__image">AluraSPA</a>
+                    </div>
+        </section>
+    </section>
     <footer class="rodape">
-        <p>Desenvolvido por Pedro Martins.</p>
+        <p>Desenvolvido por</p> <a href="https://github.com/PedroHAMartins"> Pedro Martins</a>
     </footer>
 </body>
 </html>
